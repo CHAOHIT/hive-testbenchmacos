@@ -1,4 +1,4 @@
-To build this in OS X, use already built exists https://github.com/saurabhmishra/hive-testbenchmacos
+To build this in OS X, use already built hive-testbench 0.14 https://github.com/saurabhmishra/hive-testbenchmacos
 or fix below
 
 vi tpcds-gen/target/tools/porting.h
