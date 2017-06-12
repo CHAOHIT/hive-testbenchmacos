@@ -1,3 +1,19 @@
+To build this in OS X, use already built exists https://github.com/saurabhmishra/hive-testbenchmacos
+or fix below
+
+vi tpcds-gen/target/tools/porting.h
+replace values.h with limits.h
+vi tpcds-gen/target/tools/date.c
+Include <stdlib.h> instead of <malloc.h>
+vi tpcds-gen/target/tools/dist.c
+Include <stdlib.h> instead of <malloc.h>.
+vi tpcds-gen/target/tools/genrand.c
+#define MAXINT INT_MAX
+vi tpcds-gen/target/tools/misc.c
+Include <stdlib.h> instead of <malloc.h>.
+vi tpcds-gen/target/tools/nulls.c
+#define MAXINT INT_MAX
+
 hive-testbench
 ==============
 
